@@ -1,0 +1,29 @@
+body {
+background-image: url('Images/fondo.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+body{
+    width: 100%;
+    max-width: 1024px;
+}
+.opacidad {opacity: 39%;}
+.opacidad {font-size: cover;}
+.opacidades {position: relative;bottom:570px;}
+.opacidades {opacity: 48%;}
+.logo {position: relative;bottom: 1160px;}
+.logo {position: relative;right: 50px;}
+.logox {position: relative;bottom: 1350px;}
+.logox {position: relative;right:-40px;}
+.compugif {position: relative;bottom: 1110px;}
+.compugif {position: relative;left: 30px;}
+.consultas {position: relative;bottom: 1470px;}
+.consultas {position: relative;left: 45px;}
+.consultas {font-size: 20px;}
+.quehacemos {position: relative;bottom: 1440px;}
+.quehacemos {position: relative;left: 43px;}
+.quehacemos {font-size: 20px;}
+.quehacemos {font-style: bold;}
+.quehacemos {font-family:timesnewroman;}
+.quehacemos {color: black;}

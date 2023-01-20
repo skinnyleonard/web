@@ -1,0 +1,18 @@
+body {
+	background-image: url(Images/fondo2.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;}
+.hardware {
+	font-family: arial;}
+.hardware {color: white}
+.hardware {font-style: italic;}
+.mas {color: white}
+.mas {font-family: arial;}
+.mas {font-size: 12px;}
+.software {color: white}
+.software {font-family: arial}
+.software {font-style: italic;}
+.listado {color: white}
+.listado {font-family: arial}
+.listado {font-size: 12px;}
