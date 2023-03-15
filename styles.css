@@ -8,7 +8,7 @@ body{
     width: 100%;
     max-width: 1024px;
 }
-.opacidad {opacity: 39%;}
+.opacidad {opacity: 50%;}
 .opacidad {font-size: cover;}
 .opacidades {position: relative;bottom:570px;}
 .opacidades {opacity: 48%;}
@@ -19,11 +19,37 @@ body{
 .compugif {position: relative;bottom: 1110px;}
 .compugif {position: relative;left: 30px;}
 .consultas {position: relative;bottom: 1470px;}
-.consultas {position: relative;left: 45px;}
+.consultas {position: relative;left: 40px;}
 .consultas {font-size: 20px;}
 .quehacemos {position: relative;bottom: 1440px;}
-.quehacemos {position: relative;left: 43px;}
+.quehacemos {position: relative;left: 38px;}
 .quehacemos {font-size: 20px;}
-.quehacemos {font-style: bold;}
-.quehacemos {font-family:timesnewroman;}
-.quehacemos {color: black;}
+a:link, a:visited { text-decoration: none; }
+.quehacemos a:link, a:visited{
+font-weight: 700;
+font-size: 17px;
+color:#ffffff;
+padding-top:8px;
+padding-bottom:8px;
+padding-left:10px;
+padding-right:10px;
+background-color:#001035;
+border-radius:6px;
+font-family: arial;}
+.quehacemos a:hover {
+  background-color:#021b53;
+}
+.consultas a:link, a:visited{
+font-weight: 700;
+font-size: 17px;
+color:#ffffff;
+padding-top:8px;
+padding-bottom:8px;
+padding-left:10px;
+padding-right:10px;
+background-color:#001035;
+border-radius:6px;
+font-family: arial;}
+.consultas a:hover {
+  background-color:#021b53;
+}
