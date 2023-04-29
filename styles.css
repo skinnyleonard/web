@@ -8,45 +8,6 @@ body{
     width: 100%;
     max-width: 1024px;
 }
-.opacidad {
-	position: absolute;
-	width: 100%; height: 100%;
-	opacity: 50%;
-	z-index: -1;
-}
-.opacidades {
-	width: 100%; height: 100%;
-	opacity: 48%;
-	margin-bottom: 0px;
-}
-.logo {
-	width:404px; height:246px;
-	margin-top:0px;
-	margin-right: 50px;
-	z-index: +1;
-}
-.logox {
-	width: 80%; height: 80%;
-	margin-bottom: 1350px;
-	margin-left: 40px;
-}
-.compugif {
-	width: 150px; height: 150px;
-	margin-bottom: 1110px;
-	margin-left: 30px;
-}
-.consultas {position: relative;bottom: 1470px;}
-.consultas {position: relative;left: 40px;}
-body {
-background-image: url('Images/fondo.png');
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-}
-body{
-    width: 100%;
-    max-width: 1024px;
-}
 .logo {
 	position: relative;
 	display:block;
