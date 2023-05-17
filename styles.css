@@ -20,7 +20,7 @@ body{
 	position: relative;
 	display: block;
 	width: 360px; height: 72px;
-	margin-left: 350px;
+	margin: 0 auto;
 	margin-top: -35px;
 	z-index: +2;
 }
@@ -41,6 +41,7 @@ padding-right:10px;
 background-color:#001035;
 border-radius:6px;
 font-family: arial;
+text-decoration: none;
 }
 .quehacemos a:hover {
   background-color:#021b53;
@@ -62,6 +63,7 @@ padding-right:10px;
 background-color:#001035;
 border-radius:6px;
 font-family: arial;
+text-decoration: none;
 }
 .consultas a:hover {
   background-color:#021b53;
