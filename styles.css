@@ -2,6 +2,7 @@ body{
     background-image: url(./Images/prototipo2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     border: 0;
     height: 100vh;
@@ -40,6 +41,7 @@ header img{
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 250ms;
+    padding-bottom: 15px;
 }
 @keyframes fadeIn {
     0%{
@@ -109,7 +111,7 @@ form {
 .langs{
     margin-left: 20vh;
     animation-delay: 1s;
-    list-style: circle;
+    list-style: none;
     animation: fadeInAbout 300ms ease-in;
     opacity: 0;
     animation-fill-mode: forwards;

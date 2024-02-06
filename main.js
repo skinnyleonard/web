@@ -17,9 +17,9 @@ el apartado visual, su diseño, y la funcionalidad del sitio (botones, enrutamie
 La parte Front-end del sitio se encarga de eso <br>
 El Back-end mientras tanto se encarga del apartado de servidores, manejo de datos.<br>
 <h2>¿Que ofrezco?</h2>
-<p>En este sitio ofrezco servicios de desarrollo web Front-end, diseño web, <br>
-con los lenguajes conocidos del Front-end, como son HTML, CSS y Javascript, <br>
-tambien las librerias del framework de React
+<p>Ofrezco desarrollo web Front-end, puedo diseñar portfolios, darle interctividad,<br>
+animacion al sitio, diseñar una web que te presente, (como la que estas viendo ahora), y mas.<br>
+Todo lo que sea con interfaz grafica e interaccion del usuario, me dedico
 `;
 function showWhatis() {
     var whatis = `<section class="whatis" ${innerStyles}">${whatis1}</section>`;
@@ -56,22 +56,32 @@ var faq1 = `
     </li>
     <li>
         <h3>Plazo de entrega de la web</h3>
-        El plazo de entrega lo fija el cliente
-    </li>
+        El plazo de entrega lo fija el cliente <br>
+        Se ira presentando con el paso del desarrollo, como va quedando la web
+        </li>
     <li>
         <h3>Hosting</h3>
         El hosting (en caso de comprar un dominio) queda a cargo del cliente
     </li>
     <li>
-        <h3>No se que poner aca</h3>
-        Sigo sin saber con que llenar de cosas esta web desconfiable incluso para mi
+        <h3>Estructura y diseño web</h3>
+        La estructura no la diseño yo, en ese caso la diseña el cliente ya sea con una imagen,<br>
+        un esquema, etc, yo desarrollo y diseño en la web. <BR>La estructura, en base a las
+        indicaciones y preferencia del cliente, el diseño web tambien, sera diseñado en base <br>
+        a una imagen, o descripcion del como necesite el sitio<br>
+        Diferencia entre estructura y diseño: La estructura es donde van acomodados los objetos:
+        botones, cuadros, imagenes, etc. <br> Y el diseño (ya indicado por el cliente), los colores,
+        etc. La funcionalidad del sitio tambien sera indicada y personalizada por el cliente, <br>
+        la funcionalidad se basa en los botones por ejemplo, las acciones de los botones del sitio, <br>
+        las rutas del sitio, las rutas son las paginas que tenga el sitio, una que muestre algo disitinto<br>
+        de la otra. Todo esto mediante mail, con imagenes, y descripciones <br>
     </li>
     <li>
-        <h3>Diseño</h3>
-        El diseño que la web esta manteniendo por ahora es una cagada <br>
-        espantosamente desconfiable
+        <h3>Mantenimiento</h3>
+        El mantenimiento segun necesite el cliente, se va a hacer mensualmente
     </li>
-</ul>
+    </ul>
+    <h2>Cualquier otro tipo de duda, tambien sera respondida por mail !</h2>
 `;
 function showFaq() {
     var faq = `<section class="faq" ${innerStyles}">${faq1}</section>`;
