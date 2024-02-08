@@ -51,37 +51,26 @@ var faq1 = `
 <h1>Dudas frecuentes</h1>
 <ul>
     <li>
-        <h3>Modalidad de trabajo</h3>
-        La modalidad de trabajo es virtual desde la computadora
-    </li>
-    <li>
-        <h3>Plazo de entrega de la web</h3>
-        El plazo de entrega lo fija el cliente <br>
-        Se ira presentando con el paso del desarrollo, como va quedando la web
-        </li>
-    <li>
         <h3>Hosting</h3>
         El hosting (en caso de comprar un dominio) queda a cargo del cliente
     </li>
     <li>
         <h3>Estructura y diseño web</h3>
-        La estructura no la diseño yo, en ese caso la diseña el cliente ya sea con una imagen,<br>
-        un esquema, etc, yo desarrollo y diseño en la web. <BR>La estructura, en base a las
-        indicaciones y preferencia del cliente, el diseño web tambien, sera diseñado en base <br>
-        a una imagen, o descripcion del como necesite el sitio<br>
+        Diseño y desarrollo web a partir de una idea del cliente, algunas sugerencias o<br>
+        necesidades especificas <br>
         Diferencia entre estructura y diseño: La estructura es donde van acomodados los objetos:
         botones, cuadros, imagenes, etc. <br> Y el diseño (ya indicado por el cliente), los colores,
-        etc. La funcionalidad del sitio tambien sera indicada y personalizada por el cliente, <br>
-        la funcionalidad se basa en los botones por ejemplo, las acciones de los botones del sitio, <br>
+        etc. La funcionalidad del sitio tambien sera indicada <br> y personalizada por el cliente. <br>
+        La funcionalidad se basa en los botones por ejemplo, las acciones de los botones del sitio, <br>
         las rutas del sitio, las rutas son las paginas que tenga el sitio, una que muestre algo disitinto<br>
-        de la otra. Todo esto mediante mail, con imagenes, y descripciones <br>
+        de la otra. <br>Todo esto mediante mail, con imagenes, y descripciones <br>
     </li>
     <li>
         <h3>Mantenimiento</h3>
         El mantenimiento segun necesite el cliente, se va a hacer mensualmente
     </li>
     </ul>
-    <h2>Cualquier otro tipo de duda, tambien sera respondida por mail !</h2>
+    <h2>Cualquier otro tipo de duda, estare a disposicion !</h2>
 `;
 function showFaq() {
     var faq = `<section class="faq" ${innerStyles}">${faq1}</section>`;
