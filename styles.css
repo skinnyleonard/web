@@ -1,0 +1,195 @@
+body{
+    background-image: url(./Images/prototipo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    font-family: Oxanium;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 500ms;
+}
+@font-face {
+    font-family: Oxanium;
+    src: url(./fonts/Oxanium-Regular.ttf);
+}
+header img{
+    max-width: 235px;
+    margin-top: 11px;
+    margin-left: 11px;
+    padding-bottom: 11px;
+}
+.content{
+    background-color: rgba(15, 15, 15, 0.651);
+    width: 95%;
+    margin-top: 5vh;
+    border-bottom: 5vh solid transparent;
+    background-clip: padding-box;
+}
+.slider{
+    margin-left: 20vh;
+}
+.whatis, .contacto, .faq{
+    display: block;
+    line-height: 1.5;
+    opacity: 1;
+    margin-left: 10px;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 250ms;
+    padding-bottom: 15px;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        margin-left: 0;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 10px;
+    }
+}
+.contacto input, textarea{
+    background-color: rgb(33, 33, 33);
+    border: 1px solid #4b4b4b;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 3px;
+    width: -webkit-fill-available;
+    color: white;
+    font-family: Oxanium;
+}
+.contacto button {
+    border: none;
+    box-sizing: border-box;
+    padding: 6px;
+    font-family: 'Oxanium';
+}
+.contacto button:hover{
+    background-color: darkgray;
+}
+.contacto button:active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+form {
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    width: min-content;
+    background: #313131;
+}
+.selects {
+    float: right;
+    margin-right: 10vh;
+    padding: 0;
+    margin-top: 10vh;
+}
+.selects li{
+    display: inline-block;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.selects li:hover{
+    transform: scale(1.2);
+    transition: 100ms;
+}
+.about{
+    margin-left: 20vh;
+    margin-top: 10vh;
+    opacity: 0;
+    line-height: 1.5;
+    animation: fadeInAbout 300ms ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.langs{
+    margin-left: 20vh;
+    animation-delay: 1s;
+    list-style: none;
+    animation: fadeInAbout 300ms ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.more{
+    animation: fadeInAbout 300ms ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+    margin-left: 30vh;
+}
+@keyframes fadeInAbout{
+    0%{
+        opacity: 0;
+        margin-left: 15vh;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 20vh;
+    }
+}
+@media screen and (max-width: 900px) {
+    .selects{
+        margin-right: 0vh;
+    }
+    .slider{
+        margin-left: 0vh;
+    }
+    .about, .langs, .more{
+        float: left;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 830px) {
+    .selects{
+        margin-top: 5vh;
+    }
+    .selects li{
+        display: block;
+        text-align: right;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 730px) {
+    body{
+        background-size: auto;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 650px) {
+    body{
+        background-size: auto;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 480px){
+    .slider{
+        margin-left: 0;
+    }
+    .about, .langs, .more{
+        margin-left: 60px;
+        animation: none;
+        font-size: 15px;
+        opacity: 1;
+        width: 75%;
+    }
+    .selects{
+        float: left;
+        margin-top: 5vh;
+        width: max-content;
+        margin-left: 0vh;
+    }
+    .selects li{
+        display: block;
+        line-height: 30px;
+    }
+}
