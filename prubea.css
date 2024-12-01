@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(58, 58, 58);
+}
+.selects {
+    float: right;
+    margin-right: 10vh;
+    padding: 0;
+    margin-top: 10vh;
+}
+.selects li{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 19px;
+    z-index: 10;
+    position: relative;
+}
+.selects li:hover{
+    transform: scale(1.2);
+    transition: 100ms;
+    border-bottom-width: 10px solid white;
+}
+@property --angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg; 
+  }
+  .animatedCard {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  .animatedCard::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    padding: 2px; /* control the border thickness */
+    border-radius: 10px;
+    background: linear-gradient(var(--angle),#0000 35%,white 0 65%,#0000 0);
+    --m:conic-gradient(#000 0 0);
+    mask: var(--m) exclude,var(--m) content-box;
+    animation: animate 2s linear infinite paused;
+  }
+  .animatedCard:hover::before {
+    animation-play-state: running;
+  }
+  
+  @keyframes animate {
+    to {
+      --angle:1turn;
+    }
+  }

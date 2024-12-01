@@ -1,6 +1,15 @@
 var sliderContents = document.querySelector(".slider");
 var innerStyles = 'style="display: block;"';
 const start = document.querySelector('.start').innerHTML
+const hover = document.querySelector(".logo");
+
+/*function hoverFunc(){
+    hover.src = "/Images/compugif.gif"
+}
+hover.onmouseleave = function(){
+    hover.src = "./Images/logo - copia (3).png"
+    hover.style.height = "82px"
+}*/
 
 const goBack = document.createElement('li')
 goBack.innerText = 'Atras'
