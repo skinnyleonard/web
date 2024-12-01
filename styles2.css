@@ -1,0 +1,34 @@
+body {
+	background-image: url(Images/fondo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: sans-serif;
+	color: white;
+}
+.logo {
+	position: relative;
+	display:block;
+	width:260px;
+	height:79px;
+	margin-left: 15px;
+	margin-top: 30px;
+	z-index: +2;
+}
+.op {
+	font-family: hero;
+	font-size: 42px;
+	text-align: center;
+	opacity: 85%;
+}
+.hardware, .software {
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+}
+.mas, .listado {
+	font-size: 9px;
+	font-weight: lighter;
+	opacity: 80%;
+	text-align: center;
+}
