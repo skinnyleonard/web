@@ -3,13 +3,11 @@ var innerStyles = 'style="display: block;"';
 const start = document.querySelector('.start').innerHTML
 const hover = document.querySelector(".logo");
 
-/*function hoverFunc(){
-    hover.src = "/Images/compugif.gif"
-}
-hover.onmouseleave = function(){
-    hover.src = "./Images/logo - copia (3).png"
-    hover.style.height = "82px"
-}*/
+const publicKey = "DYLpMuWmAZt4RmrgD"
+const serviceID = "service_7hs2a8f"
+const templateID = "template_jv5vcb8"
+
+emailjs.init(publicKey)
 
 const goBack = document.createElement('li')
 goBack.innerText = 'Atras'
@@ -37,6 +35,7 @@ function showWhatis() {
     document.querySelector('.selects').prepend(goBack)
     document.body.style.backgroundImage = "url(./Images/bg2.png)"
 }
+
 var contacto1 = `
 <h1>Contacto</h1>
 <h3>¿Por donde establecemos contacto?</h3>
@@ -45,20 +44,72 @@ var contacto1 = `
     Te respondere a la brevedad
     </li>
 
-    <form onsubmit="emailSend(); reset(); return false">
-        <input type="text" id="name" placeholder="Nombre" name="name" required><br>
-        <input type="email" id="email" placeholder="Mail" name="email" required><br>
-        <textarea name="alltext" id="alltext" cols="30" rows="7" placeholder="Escribi tu mensaje" required></textarea>
+    <form id="my-form">
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Nombre"
+                    required
+                />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ejemplo@mail.com"
+                required
+              /><br>
+        <textarea 
+            name="message" 
+            id="message" 
+            cols="30" 
+            rows="7" 
+            placeholder="Escribi tu mensaje"
+            required>
+        </textarea>
         <button type="submit" class="btn">Enviar</button>
     </form>
 </ul>
 `;
+
 function showContacto() {
     var contacto = `<section class="contacto" ${innerStyles}">${contacto1}</section>`;
     sliderContents.innerHTML = contacto;
     document.querySelector('.selects').prepend(goBack)
     document.body.style.backgroundImage = "url(./Images/bg3.png)"
+
+    const formulario = document.querySelector("#my-form")
+    const button = document.querySelector(".btn")
+    const subjectInput = document.querySelector("#subject")
+    const emailInput = document.querySelector("#email")
+    const messageInput = document.querySelector("#message")
+
+    formulario.addEventListener("submit", e =>{
+        e.preventDefault();
+        button.innerText = "Enviando..."
+        button.disabled = true
+
+        const inputFields = {
+            subject: subjectInput.value,
+            email: emailInput.value,
+            message: messageInput.value
+        }
+    
+        emailjs.send(serviceID, templateID, inputFields)
+            .then(() => {
+                alert("Enviado!")
+                button.innerText = "Enviar"
+                button.disabled = false
+                subjectInput.value = ""
+                emailInput.value = ""
+                messageInput.value = ""
+            }, (error) => {
+                console.log(error)
+                alert("algo salio mal")
+            })
+    })
 }
+
 var faq1 = `
 <h1>Dudas frecuentes</h1>
 <ul>
@@ -84,25 +135,10 @@ var faq1 = `
     </ul>
     <h2>Cualquier otro tipo de duda, estare a disposicion !</h2>
 `;
+
 function showFaq() {
     var faq = `<section class="faq" ${innerStyles}">${faq1}</section>`;
     sliderContents.innerHTML = faq;
     document.querySelector('.selects').prepend(goBack)
     document.body.style.backgroundImage = "url(./Images/prototipo2.png)"
-}
-function emailSend() {
-    var userName = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var alltext = document.getElementById('alltext').value
-    var messageBody = "Hola soy " + userName + "<br/> Mi mail es " + email + '<br/>' + alltext;
-
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "bachos2007@hotmail.com",
-        Password: "B982B680E1B18EAF659875AEBEF60B2D23A7",
-        To: "tomibanderas20@gmail.com",
-        From: "bachos2007@hotmail.com",
-        Subject: "This is the subject",
-        Body: messageBody,
-    }).then((message) => alert(message));
 }
