@@ -320,6 +320,31 @@ form {
 @media screen and (max-width: 480px){
     .slider{
         margin-left: 0;
+        width: 100%;
+        display: inline-block;
+    }
+    .animatedCard {
+        padding: 5px 10px;
+    }
+    header img{
+        max-width: 150px;
+    }
+    .whatis, .contacto, .faq {
+        font-size: 7px;
+        display: inline-block;
+    }
+    .imgWrapper, .imgWrapper2{
+        margin: 0 auto;
+        display: flex;
+        height: 100px;
+        font-size: 10px;
+        width: 200px;
+    }
+    .imgWrapper2{
+        top: 70px;
+    }
+    .portfolio{
+        width: 100%;
     }
     .about, .langs, .more{
         margin-left: 60px;
@@ -337,6 +362,7 @@ form {
     .selects li{
         display: block;
         line-height: 30px;
+        font-size: 10px;
     }
 }
 .logo{
