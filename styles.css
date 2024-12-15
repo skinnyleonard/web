@@ -227,6 +227,32 @@ form {
         margin-left: 20vh;
     }
 }
+@media screen and (max-width: 1200px) {
+    .selects{
+        margin-right: 0vh;
+    }
+    .slider{
+        margin-left: 0vh;
+    }
+    .about, .langs, .more{
+        float: left;
+        margin-left: 0;
+    }
+    .slider{
+        width: 100%;
+    }
+    .imgWrapper, .imgWrapper2{
+        margin: 0 auto;
+        display: flex;
+        height: 300px;
+    }
+    .imgWrapper2{
+        top: 150px;
+    }
+    .portfolio{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 900px) {
     .selects{
         margin-right: 0vh;
@@ -238,15 +264,45 @@ form {
         float: left;
         margin-left: 0;
     }
+    .slider{
+        width: 100%;
+    }
+    .imgWrapper, .imgWrapper2{
+        margin: 0 auto;
+        display: flex;
+        height: 200px;
+    }
+    .imgWrapper2{
+        top: 150px;
+    }
+    .portfolio{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 830px) {
+    .slider{
+        width: 100%;
+    }
+    .imgWrapper, .imgWrapper2{
+        margin: 0 auto;
+        display: flex;
+        height: 200px;
+    }
+    .imgWrapper2{
+        top: 150px;
+    }
+    .portfolio{
+        width: 100%;
+    }
     .selects{
         margin-top: 5vh;
     }
     .selects li{
         display: block;
-        text-align: right;
         line-height: 40px;
+    }
+    .selects li:hover{
+        transform: scale(1);
     }
 }
 @media screen and (max-width: 730px) {
