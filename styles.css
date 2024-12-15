@@ -162,6 +162,61 @@ form {
     animation-delay: 1.2s;
     margin-left: 30vh;
 }
+.imgWrapper, .imgWrapper2{
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 500ms;
+    width: 500px;
+    height: 260px;
+    position: relative;
+}
+.imgWrapper div, .imgWrapper2 div{
+    position: absolute;
+    top: 100%;
+}
+.imgWrapper{
+    margin-right: 20px;
+    animation: imgChanger 6s linear infinite;
+}
+.imgWrapper:hover{
+    transform: scale(1.1);
+}
+@keyframes imgChanger {
+    0%, 16.66% { 
+      background-image: url('Images/superblog/superblog1.png');
+    }
+    33.33%, 49.99% {
+      background-image: url('Images/superblog/superblog2.png');
+    }
+    66.66%, 83.33% {
+      background-image: url('Images/superblog/superblog3.png');
+    }
+    100% {
+      background-image: url('Images/superblog/superblog1.png');
+    }
+  }
+  .imgWrapper2{
+    animation: imgChanger2 6s linear infinite;
+}
+.imgWrapper2:hover{
+    transform: scale(1.1);
+}
+@keyframes imgChanger2 {
+    0%, 16.66% { 
+      background-image: url('Images/katalogo/katalogo1.png');
+    }
+    33.33%, 49.99% {
+      background-image: url('Images/katalogo/katalogo2.png');
+    }
+    66.66%, 83.33% {
+      background-image: url('Images/katalogo/katalogo3.png');
+    }
+    100% {
+      background-image: url('Images/katalogo/katalogo1.png');
+    }
+  }
 @keyframes fadeInAbout{
     0%{
         opacity: 0;

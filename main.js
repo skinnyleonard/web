@@ -142,3 +142,30 @@ function showFaq() {
     document.querySelector('.selects').prepend(goBack)
     document.body.style.backgroundImage = "url(./Images/prototipo2.png)"
 }
+
+var portfolio1 = `
+    <div class="imgWrapper">
+        <div>
+            <p>SuperBlog es un blog que usa backend, y consume su propia API de blogs</p>
+            <p>Si tarda en cargar es porque la API esta alojada en un sitio gratuito</p>
+        </div>
+    </div>
+    <div class="imgWrapper2">
+        <div>
+            <p>Katalogo es una web que simula en un e-commerce de compras en una tienda de computacion</p>
+        </div>
+    </div>
+`
+function showPortfolio() {
+    var portfolio = `<section class="portfolio" ${innerStyles}">${portfolio1}</section>`;
+    sliderContents.innerHTML = portfolio;
+    document.querySelector('.selects').prepend(goBack)
+    document.body.style.backgroundImage = "url(./Images/prototipo2.png)"
+    document.querySelector(".imgWrapper").addEventListener("click", () => {
+        window.open('https://superblogger.netlify.app/', '_blank'); return false;
+    })
+    document.querySelector(".imgWrapper2").addEventListener("click", () => {
+        window.open('https://katalogomercado.netlify.app/', '_blank'); return false;
+    })
+}
+
